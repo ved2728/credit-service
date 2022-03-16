@@ -9,6 +9,9 @@ node {
         stage('Inital Setup'){
             sh 'mvn clean compile'
         }
-            
+    stage ('unit testing'){
+        sh 'mvn test'
+
+    }
     
 }
